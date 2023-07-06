@@ -9,3 +9,5 @@ require("custom.neo.usercmd")
 if compat then
     require("custom.neo.compat")
 end
+
+require('custom.jasdf')

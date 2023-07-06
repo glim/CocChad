@@ -3,7 +3,8 @@ local M = require("custom.chad.specs._stock")
 local specs = {
     "auto_dark_mode",
     "coc_nvim",
-    "codeium_vim",
+    -- "codeium_vim",
+    "copilot",
     "deepl_vim",
     "hex_nvim",
     "nvim_dap",
@@ -13,7 +14,7 @@ local specs = {
     "telescope_dap_nvim",
     "vim_blade",
     "vim_arduino",
-    "firenvim",
+    -- "firenvim",
 }
 
 for _ , spec in ipairs( specs  )  do
@@ -47,6 +48,7 @@ vim.g.coc_global_extensions = {
     'coc-vimlsp',
     'coc-xml',
     'coc-yaml',
+    '@yaegassy/coc-volar'
 }
 
 return M

@@ -259,7 +259,7 @@ M.coc = {
         ["<Up>"] = { 'coc#pum#visible() ? coc#pum#prev(1) : "<Up>"', "Move suggestion up", opts = vim.tbl_extend("error", silent, noremap, expr, no_replace_keycodes) },
         ["<CR>"] = { 'coc#pum#visible() ? coc#pum#confirm() : "<CR>"', "Confirm selection", opts = vim.tbl_extend("error", silent, noremap, expr, no_replace_keycodes) },
         ["<C-e>"] = { '<Plug>(coc-snippets-expand-jump)', "Insert snippet" },
-        ["<C-l>"] = { 'coc#refresh()', "Show suggestions", opts = vim.tbl_extend("error", silent, expr) },
+        -- ["<C-l>"] = { 'coc#refresh()', "Show suggestions", opts = vim.tbl_extend("error", silent, expr) },
     },
     v = {
         ["<leader>ff"] = { ':call CocActionAsync("Format")<CR>', "Format code" },
@@ -328,23 +328,23 @@ M.arduino = {
     }
 }
 
-M.codeium = {
-    n = {
-        ["<leader>ma"] = { "<CMD>Codeium Auth<CR>", "Authenticate to Codeium", opts = silent },
-        ["<leader>me"] = { "<CMD>Codeium Enable<CR>", "Enable Codeium", opts = silent },
-        ["<leader>mbe"] = { "<CMD>Codeium EnableBuffer<CR>", "Enable Codeium in the current buffer", opts = silent },
-        ["<leader>md"] = { "<CMD>Codeium Disable<CR>", "Disable Codeium", opts = silent },
-        ["<leader>mbd"] = { "<CMD>Codeium DisableBuffer<CR>", "Disable Codeium in the current buffer", opts = silent },
-        ["<leader>mn"] = { "<CMD>call codeium#CycleCompletions(1)<CR>", "Cycle to the next Codeium sugestion", opts = silent },
-        ["<leader>mp"] = { "<CMD>call codeium#CycleCompletions(-1)<CR>", "Cycle to the previous Codeium sugestion", opts = silent },
-        ["<C-c>"] = { "<CMD>call codeium#Clear()<CR>", "Clear Codeium suggestion", opts = silent },
-    },
-    i = {
-        ["<C-f>"] = { "<CMD>call codeium#CycleCompletions(1)<CR>", "Cycle to the next Codeium sugestion", opts = silent },
-        ["<C-b>"] = { "<CMD>call codeium#CycleCompletions(-1)<CR>", "Cycle to the previous Codeium sugestion", opts = silent },
-        ["<Tab>"] = { "codeium#Accept()", "Accept Codeium suggestion", opts = vim.tbl_extend("error", script, silent, nowait, expr) },
-    },
-}
+-- M.codeium = {
+--     n = {
+--         ["<leader>ma"] = { "<CMD>Codeium Auth<CR>", "Authenticate to Codeium", opts = silent },
+--         ["<leader>me"] = { "<CMD>Codeium Enable<CR>", "Enable Codeium", opts = silent },
+--         ["<leader>mbe"] = { "<CMD>Codeium EnableBuffer<CR>", "Enable Codeium in the current buffer", opts = silent },
+--         ["<leader>md"] = { "<CMD>Codeium Disable<CR>", "Disable Codeium", opts = silent },
+--         ["<leader>mbd"] = { "<CMD>Codeium DisableBuffer<CR>", "Disable Codeium in the current buffer", opts = silent },
+--         ["<leader>mn"] = { "<CMD>call codeium#CycleCompletions(1)<CR>", "Cycle to the next Codeium sugestion", opts = silent },
+--         ["<leader>mp"] = { "<CMD>call codeium#CycleCompletions(-1)<CR>", "Cycle to the previous Codeium sugestion", opts = silent },
+--         ["<C-c>"] = { "<CMD>call codeium#Clear()<CR>", "Clear Codeium suggestion", opts = silent },
+--     },
+--     i = {
+--         ["<C-f>"] = { "<CMD>call codeium#CycleCompletions(1)<CR>", "Cycle to the next Codeium sugestion", opts = silent },
+--         ["<C-b>"] = { "<CMD>call codeium#CycleCompletions(-1)<CR>", "Cycle to the previous Codeium sugestion", opts = silent },
+--         ["<Tab>"] = { "codeium#Accept()", "Accept Codeium suggestion", opts = vim.tbl_extend("error", script, silent, nowait, expr) },
+--     },
+-- }
 
 M.hex = {
     n = {
