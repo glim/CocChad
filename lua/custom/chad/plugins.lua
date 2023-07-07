@@ -5,14 +5,15 @@ local specs = {
     "coc_nvim",
     -- "codeium_vim",
     "copilot",
-    "deepl_vim",
-    "hex_nvim",
+    -- "deepl_vim",
+    -- "hex_nvim",
     "nvim_dap",
     "nvim_dap_ui",
     "nvim_dap_virtual_text",
     "nvim_treesitter_context",
     "telescope_dap_nvim",
-    "vim_blade",
+    "toggleterm",
+    -- "vim_blade",
     "vim_arduino",
     -- "firenvim",
 }
@@ -52,4 +53,3 @@ vim.g.coc_global_extensions = {
 }
 
 return M
-

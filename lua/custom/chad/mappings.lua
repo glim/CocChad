@@ -346,30 +346,30 @@ M.arduino = {
 --     },
 -- }
 
-M.hex = {
-    n = {
-        ["<leader>h"] = { "<CMD>HexToggle<CR>", "Toggle hex view", opts = silent },
-    }
-}
-
-M.deepl = {
-    v = {
-        ["<leader>tr2en"] = { '<CMD>call deepl#v("EN")<CR>', "Translate to English", opt = silent },
-        ["<leader>trdeen"] = { '<CMD>call deepl#v("EN", "DE")<CR>', "Translate from German to English", opt = silent },
-        ["<leader>trtren"] = { '<CMD>call deepl#v("EN", "TR")<CR>', "Translate from Turkish to English", opt = silent },
-        ["<leader>tr2de"] = { '<CMD>call deepl#v("DE")<CR>', "Translate to German", opt = silent },
-        ["<leader>trende"] = { '<CMD>call deepl#v("DE", "EN")<CR>', "Translate from English to German", opt = silent },
-        ["<leader>trtrde"] = { '<CMD>call deepl#v("DE", "TR")<CR>', "Translate from Turkish to German", opt = silent },
-        ["<leader>tr2tr"] = { '<CMD>call deepl#v("TR")<CR>', "Translate to Turkish", opt = silent },
-        ["<leader>trentr"] = { '<CMD>call deepl#v("TR", "EN")<CR>', "Translate from English to Turkish", opt = silent },
-        ["<leader>trdetr"] = { '<CMD>call deepl#v("TR", "DE")<CR>', "Translate from German to Turkish", opt = silent },
-    }
-}
-
-M.firenvim = {
-    n = {
-        ["<leader>cfni"] = { "<CMD>call firenvim#install(0)<CR>", "Install FireNvim bridge" },
-    }
-}
+-- M.hex = {
+--     n = {
+--         ["<leader>h"] = { "<CMD>HexToggle<CR>", "Toggle hex view", opts = silent },
+--     }
+-- }
+--
+-- M.deepl = {
+--     v = {
+--         ["<leader>tr2en"] = { '<CMD>call deepl#v("EN")<CR>', "Translate to English", opt = silent },
+--         ["<leader>trdeen"] = { '<CMD>call deepl#v("EN", "DE")<CR>', "Translate from German to English", opt = silent },
+--         ["<leader>trtren"] = { '<CMD>call deepl#v("EN", "TR")<CR>', "Translate from Turkish to English", opt = silent },
+--         ["<leader>tr2de"] = { '<CMD>call deepl#v("DE")<CR>', "Translate to German", opt = silent },
+--         ["<leader>trende"] = { '<CMD>call deepl#v("DE", "EN")<CR>', "Translate from English to German", opt = silent },
+--         ["<leader>trtrde"] = { '<CMD>call deepl#v("DE", "TR")<CR>', "Translate from Turkish to German", opt = silent },
+--         ["<leader>tr2tr"] = { '<CMD>call deepl#v("TR")<CR>', "Translate to Turkish", opt = silent },
+--         ["<leader>trentr"] = { '<CMD>call deepl#v("TR", "EN")<CR>', "Translate from English to Turkish", opt = silent },
+--         ["<leader>trdetr"] = { '<CMD>call deepl#v("TR", "DE")<CR>', "Translate from German to Turkish", opt = silent },
+--     }
+-- }
+--
+-- M.firenvim = {
+--     n = {
+--         ["<leader>cfni"] = { "<CMD>call firenvim#install(0)<CR>", "Install FireNvim bridge" },
+--     }
+-- }
 
 return M
