@@ -45,5 +45,9 @@
   "intelephense.licenceKey": "${env:INTELEPHENSE_LICENSE_KEY}",
   "cursors.cancelKey": "<C-c>",
   "prettier.disableLanguages": [],
-  "coc.preferences.formatOnSave": true
+  "coc.preferences.formatOnSave": true,
+  "suggest.minTriggerInputLength": 1,
+  "volar.autoClosingTags": true,
+  "volar.autoCreateQuotes": true,
+  "eslint.enable": false
 }
