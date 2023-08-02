@@ -14,3 +14,5 @@ vim.keymap.set("n", "<leader>tO", ":OverseerToggle<CR>", { noremap = true })
 vim.keymap.set("i", "jk", "<Esc>", { noremap = true })
 vim.keymap.set("i", "<c-space>", "coc#refresh()", { silent = true, expr = true })
 vim.keymap.set("i", "<c-j>", "<Plug>(coc-snippets-expand-jump)")
+
+--vim.auto ColorScheme * hi CocUnusedHighlight ctermbg=NONE guibg=NONE guifg=#808080
